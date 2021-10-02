@@ -1,0 +1,59 @@
+<div id="fullframe">
+  <div class="container">
+    <div class="row onpc">
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Wavie</h2>
+        <form #in="ngForm">
+          <div class="mb-3">
+            <label for="user" class="form-label">Email:</label>
+            <input name="user" id="user" aria-describedby="mensajeEmail" class="form-control" required
+              [(ngModel)]="this.user">
+            <div id="mensajeEmail" class="form-text">tucorreo@tudominio.com</div>
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Contraseña: </label>
+            <input name="pass" type="password" class="form-control" required [(ngModel)]="this.pass">
+          </div>
+          <button class="btn btn-secondary" (click)="login()">Enviar</button>
+          <button class="btn btn-warning" type="reset">Reiniciar</button>
+        </form>
+        <div class="mb-3">
+          <h4>Los mejores precios en la Web</h4>
+        </div>
+        <div class="mb-3">
+          <img src="./../../assets/iphones.png" class="img-fluid w-59" alt="...">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./../../assets/laptop2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item img-container">
+              <img src="./../../assets/laptop3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item img-container">
+              <img src="./../../assets/mouse1.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
